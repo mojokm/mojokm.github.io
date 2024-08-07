@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #b5a8a2;
 }
 
 header {
@@ -57,4 +57,9 @@ header {
     width: 24px;
     height: 24px;
     margin-right: 5px;
+}
+
+.menu-item .radar-chart {
+    width: 100%;
+    margin-top: 10px;
 }
