@@ -3,9 +3,9 @@ const menuData = [
         "name": "夢雲瀚",
         "flavor": "水蜜桃/ 鳳梨/ 覆盆莓",
         "alcohol_content": "≈12% ABV",
-        "alcohol_units": 0,
+        "alcohol_units": 5,
         "price": 360,
-        "image": "https://drive.google.com/file/d/1-LqPcZx3yY-ecqHbj00C9-A-2KejVxJc/view?usp=drive_link",
+        "image": "",
         "icon": "https://drive.google.com/file/d/12TQmzPLCm7Fpwybi33FVdNRDFDuM4bCp/view?usp=drive_link",
         "flavor_profile": {
             "酸": 4,
