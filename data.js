@@ -118,6 +118,7 @@ const menuData = [
         "alcohol_units": 2,
         "price": 260,
         "image": "https://drive.google.com/file/d/1Sz8FW/view?usp=drive_link",
+        "icon": "https://drive.google.com/file/d/1Uz8VYT/view?",
         "icon": "https://drive.google.com/file/d/1Uz8VYT/view?usp=drive_link",
         "flavor_profile": {
             "酸": 5,

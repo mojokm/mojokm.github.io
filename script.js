@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <span>酒精濃度: ${item.alcohol_content}</span>
                 <div class="alcohol-units">${getAlcoholUnits(item.alcohol_units)}</div>
             </div>
-            <canvas class="radar-chart" id="radar-chart-${item.name.replace(/ /g, '-')}"></canvas>
+            <div class="radar-chart-container">
+                <canvas class="radar-chart" id="radar-chart-${item.name.replace(/ /g, '-')}"></canvas>
+            </div>
         `;
 
         menuContainer.appendChild(menuItem);
@@ -51,7 +53,9 @@ function generateRadarChart(containerId, flavorProfile) {
         options: {
             scale: {
                 ticks: { beginAtZero: true }
-            }
+            },
+            responsive: true,
+            maintainAspectRatio: false
         }
     });
 }
