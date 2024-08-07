@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function getAlcoholUnits(units) {
     let unitIcons = '';
     for (let i = 0; i < units; i++) {
-        unitIcons += `<img src="path_to_your_icon.png" alt="unit">`;
+        unitIcons += `<img src="icon.png" alt="unit">`;
     }
     return unitIcons;
 }
