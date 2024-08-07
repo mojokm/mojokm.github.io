@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function getAlcoholUnits(units) {
     let unitIcons = '';
     for (let i = 0; i < units; i++) {
-        unitIcons += `<img src="path_to_your_icon.png" alt="unit">`;
+        unitIcons += `<img src="icon.png" alt="unit">`;
     }
     return unitIcons;
 }
@@ -52,7 +52,10 @@ function generateRadarChart(containerId, flavorProfile) {
         data: data,
         options: {
             scale: {
-                ticks: { beginAtZero: true }
+                ticks: { 
+                    beginAtZero: true,
+                    stepSize:1,
+                 }
             },
             responsive: true,
             maintainAspectRatio: false
