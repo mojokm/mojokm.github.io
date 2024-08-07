@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b5a8a2;
+    background-color: #f9f9f9;
 }
 
 header {
@@ -20,13 +20,16 @@ header {
 }
 
 .menu-item {
-    background-color: #b5a8a2;
+    background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin: 10px;
     padding: 15px;
     width: 300px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menu-item img {
@@ -41,6 +44,7 @@ header {
 
 .menu-item p {
     margin: 0.5em 0;
+    text-align: center;
 }
 
 .menu-item .price {
@@ -51,6 +55,7 @@ header {
 .menu-item .alcohol-content {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .menu-item .alcohol-content img {
@@ -61,5 +66,13 @@ header {
 
 .menu-item .radar-chart {
     width: 100%;
+    height: 250px;
     margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
