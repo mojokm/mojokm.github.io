@@ -55,7 +55,9 @@ function generateRadarChart(containerId, flavorProfile) {
         options: {
             scale: {
                 ticks: { beginAtZero: true,
-                    stepSize:1
+                    stepSize:1,
+                    min:0,
+                    max:5                    
                 }
             },
             responsive: true,
