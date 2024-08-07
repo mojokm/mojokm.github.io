@@ -15,26 +15,34 @@ const menuItems = {
 };
 
 function App() {
-  const [menuType, setMenuType] = useState('dineIn');
+  const [menuType, setMenuType] = useState(null);
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Interactive Drink Menu</h1>
         <div>
-          <button onClick={() => setMenuType('dineIn')}>Dine In Menu</button>
-          <button onClick={() => setMenuType('takeaway')}>Takeaway Menu</button>
-        </div>
-        <div className="menu">
-          {menuItems[menuType].map((item, index) => (
-            <div key={index} className="menu-item">
-              <img src={item.image} alt={item.name} />
-              <h2>{item.name}</h2>
-              <p>Flavor: {item.flavor}</p>
-              <p>Alcohol Content: {item.alcoholContent}</p>
-              <p>Price: {item.price}</p>
-            </div>
-          ))}
+          {!menuType ? (
+            <>
+              <button onClick={() => setMenuType('dineIn')}>Dine In Menu</button>
+              <button onClick={() => setMenuType('takeaway')}>Takeaway Menu</button>
+            </>
+          ) : (
+            <>
+              <button onClick={() => setMenuType(null)}>Back to Menu</button>
+              <div className="menu">
+                {menuItems[menuType].map((item, index) => (
+                  <div key={index} className="menu-item">
+                    <img src={item.image} alt={item.name} />
+                    <h2>{item.name}</h2>
+                    <p>Flavor: {item.flavor}</p>
+                    <p>Alcohol Content: {item.alcoholContent}</p>
+                    <p>Price: {item.price}</p>
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </header>
     </div>
