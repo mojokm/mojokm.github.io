@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+
+  "homepage": "http://Mojokm.github.io/Mojokm.github.io/src/components/MenuItem.js",
+  
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"    
+  }
+
+}

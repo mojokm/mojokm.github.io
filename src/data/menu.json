@@ -1,0 +1,23 @@
+{
+    "indoor": [
+      {
+        "name": "Mojito",
+        "image": "path/to/mojito.jpg",
+        "alcohol": "14%",
+        "flavor": "Minty",
+        "price": "$10"
+      }
+      
+    ],
+    "takeaway": [
+      {
+        "name": "Old Fashioned",
+        "image": "path/to/old-fashioned.jpg",
+        "alcohol": "20%",
+        "flavor": "Bitter",
+        "price": "$12"
+      }
+      
+    ]
+  }
+  
