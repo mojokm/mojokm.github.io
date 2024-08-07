@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #8a8484;
+    background-color: #c7bbbb;
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ header h1 {
 }
 
 .menu-item img {
-    max-width: 100%;
+    max-width: 10%;
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -101,8 +101,8 @@ header h1 {
 }
 
 .menu-item .radar-chart {
-    width: 100%;
-    height: 100%;
+    width: 10%;
+    height: 10%;
 }
 
 @media (max-width: 900px) {
@@ -114,7 +114,7 @@ header h1 {
 
 @media (max-width: 600px) {
     .menu-item {
-        width: 100%;
+        width: 10%;
         margin: 10px 0;
     }
 }
