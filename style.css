@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #c7bbbb;
+    text-align: center;
 }
 
 header {
@@ -14,8 +15,8 @@ header {
 }
 
 header .logo {
-    position: absolute;
-    top: 10px;
+    position: relative;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     height: 50px;
