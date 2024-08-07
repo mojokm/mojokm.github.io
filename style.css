@@ -4,7 +4,6 @@ body {
     padding: 0;
     background-color: #c7bbbb;
     text-align: center;
-    align-items: center;
 }
 
 header {
@@ -12,17 +11,20 @@ header {
     color: #fff;
     padding: 1em 0;
     position: relative;
+    text-align:center;
 }
 
 header .logo {
     display: block;
     margin: 0 auto;
     height: 50px;
+    text-align:center;
 }
 
 header h1 {
     margin: 0;
     font-size: 2em;
+    text-align:center;
 }
 
 #menu-container {
