@@ -37,7 +37,7 @@ function generateRadarChart(containerId, flavorProfile) {
         labels: ['酸', '甜', '苦', '酒感', '風味強度'],
         datasets: [{
             label: 'Flavor Profile',
-            data: [flavorProfile.酸, flavorProfile.甜, flavorProfile.苦, flavorProfile.酒感, flavorProfile.風味強度],
+            data: [flavorProfile['酸'], flavorProfile['甜'], flavorProfile['苦'], flavorProfile['酒感'], flavorProfile['風味強度']],
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255, 99, 132, 1)',
             borderWidth: 1

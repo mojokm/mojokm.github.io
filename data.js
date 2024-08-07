@@ -5,7 +5,7 @@ const menuData = [
         "alcohol_content": "≈12% ABV",
         "alcohol_units": 5,
         "price": 360,
-        "image": "",
+        "image": "https://drive.google.com/file/d/1-LqPcZx3yY-ecqHbj00C9-A-2KejVxJc/view?usp=drive_link",
         "icon": "https://drive.google.com/file/d/12TQmzPLCm7Fpwybi33FVdNRDFDuM4bCp/view?usp=drive_link",
         "flavor_profile": {
             "酸": 4,
@@ -75,6 +75,54 @@ const menuData = [
             "酸": 4,
             "甜": 2,
             "苦": 1,
+            "酒感": 1,
+            "風味強度": 3
+        }
+    },
+    {
+        "name": "櫻花酒",
+        "flavor": "櫻花",
+        "alcohol_content": "6% ABV",
+        "alcohol_units": 3,
+        "price": 230,
+        "image": "https://drive.google.com/file/d/1Yz8UHZv/view?usp=drive_link",
+        "icon": "https://drive.google.com/file/d/1Oz8XvT/view?usp=drive_link",
+        "flavor_profile": {
+            "酸": 4,
+            "甜": 3,
+            "苦": 1,
+            "酒感": 2,
+            "風味強度": 3
+        }
+    },
+    {
+        "name": "藍莓美酒",
+        "flavor": "藍莓",
+        "alcohol_content": "11% ABV",
+        "alcohol_units": 4,
+        "price": 310,
+        "image": "https://drive.google.com/file/d/1Vz8QZT/view?usp=drive_link",
+        "icon": "https://drive.google.com/file/d/1Rz8TUT/view?usp=drive_link",
+        "flavor_profile": {
+            "酸": 3,
+            "甜": 4,
+            "苦": 2,
+            "酒感": 3,
+            "風味強度": 4
+        }
+    },
+    {
+        "name": "草莓蜜",
+        "flavor": "草莓",
+        "alcohol_content": "9% ABV",
+        "alcohol_units": 2,
+        "price": 260,
+        "image": "https://drive.google.com/file/d/1Sz8FW/view?usp=drive_link",
+        "icon": "https://drive.google.com/file/d/1Uz8VYT/view?usp=drive_link",
+        "flavor_profile": {
+            "酸": 5,
+            "甜": 3,
+            "苦": 0,
             "酒感": 1,
             "風味強度": 3
         }
