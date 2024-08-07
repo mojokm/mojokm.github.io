@@ -14,16 +14,10 @@ header {
 }
 
 header .logo {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 50px;
-}
-
-header h1 {
-    margin: 0;
-    padding-top: 10px;
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 #menu-container {
@@ -37,18 +31,13 @@ header h1 {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    margin: 15px;
+    margin: 10px;
     padding: 15px;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: transform 0.2s ease-in-out;
-}
-
-.menu-item:hover {
-    transform: translateY(-5px);
 }
 
 .menu-item img {
@@ -59,13 +48,11 @@ header h1 {
 .menu-item h2 {
     font-size: 1.5em;
     margin: 0.5em 0;
-    color: #333;
 }
 
 .menu-item p {
     margin: 0.5em 0;
     text-align: center;
-    color: #555;
 }
 
 .menu-item .price {
@@ -77,10 +64,6 @@ header h1 {
     display: flex;
     align-items: center;
     margin-top: 10px;
-}
-
-.menu-item .alcohol-content span {
-    margin-right: 5px;
 }
 
 .menu-item .alcohol-content img {
