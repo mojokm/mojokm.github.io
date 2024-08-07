@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c7bbbb;
+    background-color: #9d8383;
 }
 
 header {
@@ -19,6 +19,7 @@ header .logo {
     left: 30%;
     transform: translateX(-50%);
     height: 20px;
+    align-items: center;
 }
 
 header h1 {
