@@ -7,12 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menuItem.innerHTML = `
             <img src="${item.image}" alt="${item.name}">
-            <h2>${item.name}</h2>
-            <p>${item.flavor}</p>
-            <p class="price">NT$ ${item.price}</p>
-            <div class="alcohol-content">
-                <span>酒精濃度: ${item.alcohol_content}</span>
-                <div class="alcohol-units">${getAlcoholUnits(item.alcohol_units)}</div>
+            <div class="info-container">
+                <h2>${item.name}</h2>
+                <p>${item.flavor}</p>
+                <p class="price">NT$ ${item.price}</p>
+                <div class="alcohol-content">
+                    <span>酒精濃度: ${item.alcohol_content}</span>
+                    <div class="alcohol-units">${getAlcoholUnits(item.alcohol_units)}</div>
+                </div>
             </div>
             <div class="radar-chart-container">
                 <canvas class="radar-chart" id="radar-chart-${item.name.replace(/ /g, '-')}"></canvas>
@@ -29,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function getAlcoholUnits(units) {
     let unitIcons = '';
     for (let i = 0; i < units; i++) {
-        unitIcons += `<img src="icon.png" alt="unit">`;
+        unitIcons += `<img src="path_to_your_icon.png" alt="unit">`;
     }
     return unitIcons;
 }
@@ -52,10 +54,9 @@ function generateRadarChart(containerId, flavorProfile) {
         data: data,
         options: {
             scale: {
-                ticks: { 
-                    beginAtZero: true,
-                    stepSize:1,
-                 }
+                ticks: { beginAtZero: true,
+                    stepSize:1
+                }
             },
             responsive: true,
             maintainAspectRatio: false
