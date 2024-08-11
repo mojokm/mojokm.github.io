@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const menuContainer = document.getElementById("menu-container");
 
-    menuData.forEach(item => {
+    menuData.forEach((item, index) => {
         const menuItem = document.createElement("div");
         menuItem.classList.add("menu-item");
 
@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         menuContainer.appendChild(menuItem);
 
+        // Add delay to animation
+        setTimeout(() => {
+            menuItem.classList.add('loaded');
+        }, index * 100); // Delay increases with each item
+
         // Generate radar chart
         generateRadarChart(`radar-chart-${item.name.replace(/ /g, '-')}`, item.flavor_profile);
     });
@@ -42,11 +47,11 @@ function generateRadarChart(containerId, flavorProfile) {
         datasets: [{
             label: 'Flavor Profile',
             data: [flavorProfile['酸'], flavorProfile['甜'], flavorProfile['苦'], flavorProfile['酒感'], flavorProfile['風味強度']],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
+            backgroundColor: 'rgba(46, 204, 113, 0.2)',
+            borderColor: 'rgba(46, 204, 113, 1)',
             borderWidth: 2,
-            //pointBackgroundColor: '#2ecc71',
-            //pointBorderColor: '#2ecc71'
+            pointBackgroundColor: '#2ecc71',
+            pointBorderColor: '#2ecc71'
         }]
     };
 
@@ -56,11 +61,7 @@ function generateRadarChart(containerId, flavorProfile) {
         data: data,
         options: {
             scale: {
-                ticks: { beginAtZero: true,
-                    stepsize:1,
-                    max:5,
-                    min:0
-                }
+                ticks: { beginAtZero: true }
             },
             responsive: true,
             maintainAspectRatio: false
