@@ -45,8 +45,8 @@ function generateRadarChart(containerId, flavorProfile) {
             backgroundColor: 'rgba(255, 99, 132, 0.2)',
             borderColor: 'rgba(255, 99, 132, 1)',
             borderWidth: 2,
-            pointBackgroundColor: '#2ecc71',
-            pointBorderColor: '#2ecc71'
+            //pointBackgroundColor: '#2ecc71',
+            //pointBorderColor: '#2ecc71'
         }]
     };
 
