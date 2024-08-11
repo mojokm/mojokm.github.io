@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function getAlcoholUnits(units) {
     let unitIcons = '';
     for (let i = 0; i < units; i++) {
-        unitIcons += `<img src="icon.png" alt="unit" width="20px">`;
+        unitIcons += `<img src="path_to_your_icon.png" alt="unit">`;
     }
     return unitIcons;
 }
@@ -42,9 +42,11 @@ function generateRadarChart(containerId, flavorProfile) {
         datasets: [{
             label: 'Flavor Profile',
             data: [flavorProfile['酸'], flavorProfile['甜'], flavorProfile['苦'], flavorProfile['酒感'], flavorProfile['風味強度']],
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgba(255, 99, 132, 1)',
-            borderWidth: 1
+            backgroundColor: 'rgba(46, 204, 113, 0.2)',
+            borderColor: 'rgba(46, 204, 113, 1)',
+            borderWidth: 2,
+            pointBackgroundColor: '#2ecc71',
+            pointBorderColor: '#2ecc71'
         }]
     };
 
@@ -55,9 +57,7 @@ function generateRadarChart(containerId, flavorProfile) {
         options: {
             scale: {
                 ticks: { beginAtZero: true,
-                    stepSize:1,
-                    min:0,
-                    max:5                    
+                    stepsize:1
                 }
             },
             responsive: true,
