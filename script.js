@@ -47,11 +47,12 @@ function generateRadarChart(containerId, flavorProfile) {
         datasets: [{
             label: 'Flavor Profile',
             data: [flavorProfile['酸'], flavorProfile['甜'], flavorProfile['苦'], flavorProfile['酒感'], flavorProfile['風味強度']],
-            backgroundColor: 'rgba(46, 204, 113, 0.2)',
-            borderColor: 'rgba(46, 204, 113, 1)',
-            borderWidth: 2,
-            pointBackgroundColor: '#2ecc71',
-            pointBorderColor: '#2ecc71'
+            backgroundColor: 'rgba(255, 99, 132, 0.4)',
+            borderColor: 'rgba(255, 99, 132, 1)',
+            pointBackgroundColor: 'rgba(255, 159, 64, 1)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(255, 99, 132, 1)'
         }]
     };
 
@@ -61,7 +62,27 @@ function generateRadarChart(containerId, flavorProfile) {
         data: data,
         options: {
             scale: {
-                ticks: { beginAtZero: true }
+                ticks: {
+                    beginAtZero: true,
+                    max: 5, // Assuming the maximum value is 5
+                    min: 0,
+                    stepSize: 1,
+                    showLabelBackdrop: false, // Hide the backdrop
+                    fontColor: '#333',
+                    fontStyle: 'bold'
+                },
+                gridLines: {
+                    color: 'rgba(0, 0, 0, 0.2)',
+                    circular: true
+                },
+                angleLines: {
+                    color: 'rgba(0, 0, 0, 0.2)' // Lines from the center outward
+                },
+                pointLabels: {
+                    fontSize: 14,
+                    fontColor: '#333',
+                    fontStyle: 'bold'
+                }
             },
             responsive: true,
             maintainAspectRatio: false
