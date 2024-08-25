@@ -76,7 +76,7 @@ header h1 {
 }
 
 .menu-item img {
-    max-width: 120px;
+    max-width: 100px;
     border-radius: 8px;
     margin-right: 20px;
 }
@@ -114,8 +114,8 @@ header h1 {
 }
 
 .menu-item .alcohol-content img {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     margin-right: 5px;
 }
 
@@ -125,8 +125,8 @@ header h1 {
 }
 
 .menu-item .radar-chart-container {
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
 }
 
 .menu-item .radar-chart {
@@ -144,8 +144,8 @@ header h1 {
     }
 
     .menu-item .radar-chart-container {
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
     }
 }
 
