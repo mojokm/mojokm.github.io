@@ -16,8 +16,8 @@ const menuData = [
         }
     },
     {
-        "name": "夢幻水蜜桃",
-        "flavor": "水蜜桃",
+        "name": "16號",
+        "flavor": "高粱",
         "alcohol_content": "8% ABV",
         "alcohol_units": 3,
         "price": 250,
@@ -32,7 +32,7 @@ const menuData = [
         }
     },
     {
-        "name": "鳳梨爽",
+        "name": "謙謙君子",
         "flavor": "鳳梨",
         "alcohol_content": "10% ABV",
         "alcohol_units": 4,
@@ -48,8 +48,8 @@ const menuData = [
         }
     },
     {
-        "name": "覆盆莓之夢",
-        "flavor": "覆盆莓",
+        "name": "燕南紅",
+        "flavor": "",
         "alcohol_content": "9% ABV",
         "alcohol_units": 3,
         "price": 270,
@@ -64,8 +64,8 @@ const menuData = [
         }
     },
     {
-        "name": "檸檬清新",
-        "flavor": "檸檬",
+        "name": "56小姐",
+        "flavor": "水蜜桃",
         "alcohol_content": "7% ABV",
         "alcohol_units": 2,
         "price": 240,
@@ -80,8 +80,8 @@ const menuData = [
         }
     },
     {
-        "name": "櫻花酒",
-        "flavor": "櫻花",
+        "name": "溫蒂公主的前任",
+        "flavor": "茶酒",
         "alcohol_content": "6% ABV",
         "alcohol_units": 3,
         "price": 230,
@@ -96,7 +96,7 @@ const menuData = [
         }
     },
     {
-        "name": "藍莓美酒",
+        "name": "夢筆生花",
         "flavor": "藍莓",
         "alcohol_content": "11% ABV",
         "alcohol_units": 4,
@@ -112,7 +112,7 @@ const menuData = [
         }
     },
     {
-        "name": "草莓蜜",
+        "name": "清醒惡魔",
         "flavor": "草莓",
         "alcohol_content": "9% ABV",
         "alcohol_units": 2,
@@ -128,7 +128,7 @@ const menuData = [
         }
     },
     {
-        "name": "八威",
+        "name": "水果泡泡",
         "flavor": "芭樂",
         "alcohol_content": "6% ABV",
         "alcohol_units": 1,
