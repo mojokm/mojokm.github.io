@@ -118,11 +118,26 @@ const menuData = [
         "alcohol_units": 2,
         "price": 260,
         "image": "https://drive.google.com/file/d/1Sz8FW/view?usp=drive_link",
-        "icon": "https://drive.google.com/file/d/1Uz8VYT/view?",
         "icon": "https://drive.google.com/file/d/1Uz8VYT/view?usp=drive_link",
         "flavor_profile": {
             "酸": 5,
             "甜": 3,
+            "苦": 0,
+            "酒感": 1,
+            "風味強度": 3
+        }
+    },
+    {
+        "name": "八威",
+        "flavor": "芭樂",
+        "alcohol_content": "6% ABV",
+        "alcohol_units": 1,
+        "price": 260,
+        "image": "https://drive.google.com/file/d/1Sz8FW/view?usp=drive_link",
+        "icon": "https://drive.google.com/file/d/1Uz8VYT/view?usp=drive_link",
+        "flavor_profile": {
+            "酸": 2,
+            "甜": 4,
             "苦": 0,
             "酒感": 1,
             "風味強度": 3
