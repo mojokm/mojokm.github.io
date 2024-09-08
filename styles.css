@@ -3,7 +3,7 @@ body {
     font-family: 'NotoSansCJKtc', Light;
     margin: 0;
     padding: 0;
-    background-color: #3f2e2d;
+    background-color: #1d2748;
     color: #fff;
     text-align: center;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-    background-color: #3f2e2d;
+    background-color: #1d2748;
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -136,7 +136,7 @@ header h1 {
 
 @media (max-width: 900px) {
     .menu-item {
-        flex: 0 1 calc(50% - 40px); /* Two items per row on smaller screens */
+        flex: 0 1 calc(30% - 40px); /* Two items per row on smaller screens */
     }
 
     .menu-item img {
